@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body, #root {
+height: 100%;
+}
+
+
+/* small helpers */
+.bg-gradient-hero {
+background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(16,185,129,0.08));
+}
+
+
+/* glass effect helper */
+.glass {
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+}

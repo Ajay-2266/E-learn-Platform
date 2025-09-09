@@ -1,0 +1,39 @@
+/* Full page container */
+.course-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(4, 79, 111); /* Dashboard dark base */
+  padding-bottom: 50px;
+  color: #094769;
+}
+
+/* Simple colored cards */
+.card {
+  background: rgba(50, 50, 80, 0.9); /* solid card color matching dashboard */
+  border-radius: 12px;
+  padding: 30px 20px;
+  color: #0b4d73;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading inside card */
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Progress text */
+.card p {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #09577d;
+}

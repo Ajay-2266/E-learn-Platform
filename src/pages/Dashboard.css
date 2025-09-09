@@ -1,0 +1,53 @@
+/* Fullscreen background */
+.dashboard-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark overlay for readability */
+.dashboard-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Glassmorphic card */
+.dashboard-card {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings */
+.dashboard-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.dashboard-card p {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,77 @@
+/* Fullscreen background */
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* ✅ Dark overlay for readability */
+.landing-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Blur effect only behind content */
+.glass-box {
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255, 255, 255, 0.1); /* very light transparent layer */
+  backdrop-filter: blur(0px); 
+  -webkit-backdrop-filter: blur(15px);
+
+  padding: 400px;
+  max-height: 100000000px;
+  max-width: 10000px;
+  height: 60%;
+  width: 200%;
+  border-radius: 15px;
+  border: none;
+  box-shadow: none;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Headings */
+.glass-box h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.glass-box p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.glass-box .btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.glass-box .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.glass-box .btn-primary:hover {
+  background-color: #0056b3;
+}

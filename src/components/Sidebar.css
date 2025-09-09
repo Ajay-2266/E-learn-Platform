@@ -1,0 +1,36 @@
+.sidebar-container {
+  background-image: url('../assets/dashboard-bg.jpg'); /* same image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional overlay for different tint */
+.sidebar-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 41, 55, 0.8); /* dark tint for sidebar */
+  z-index: -1;
+}
+.sidebar-container .nav-link {
+  color: #f9fafb; /* light buttons */
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+.sidebar-container .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* hover effect */
+  color: #fff;
+}

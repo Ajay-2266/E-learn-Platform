@@ -1,0 +1,67 @@
+.progress-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0f7fa, #f3e5f5);
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progress-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.progress-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.progress-bar {
+  height: 12px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
